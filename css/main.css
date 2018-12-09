@@ -1,0 +1,64 @@
+body{
+	background-color: gray;
+	background-image: url(../img/fondo.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+h1,p{
+	color: white;
+}
+
+.cuadro{
+	background-color: rgba(0,0,0,0.4);
+	width: 60%;
+	margin-top:15%;
+	text-align: center;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-radius: 25px;
+}
+
+.ui-datepicker{
+	width: auto;
+	background: #003c78;
+	color: black;
+	font-size: 10px;
+	
+}
+
+.ui-datepicker a {
+    color: #003c78;
+    font-family: 10px;
+    
+}
+
+.ui-datepicker table{
+	font-size: 15px;
+	color: #003c78;
+	border: 2px;
+
+}
+.ui-datepicker .ui-datepicker-header{
+	font-size: 12px;
+	background: #66cc66;
+}
+.ui-datepicker th{
+color: #003c78;
+background-color: #66cc66;
+}
+.ui-datepicker .ui-state-default
+{
+color: #fff;
+background: #003c78;
+border-radius: 20px;
+}
+.ui-datepicker .ui-state-active
+{
+background: orange;
+color: #FFFFFF;
+}
+.errores{
+	border-color: #ff0000;
+}

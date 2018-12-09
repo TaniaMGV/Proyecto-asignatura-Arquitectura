@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Catra</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<!-- definiendo estilo para hacer transparente una seccion  -->
+<style>
+  .cuadro-transparente{
+      background-color: rgba(0,0,0,0.5); 
+      border:1px; border-color:#ffffff;
+      border-style: solid;
+      padding:10px;
+      margin:10px;
+      font-family: 'Shadows Into Light', cursive;
+    }
+
+</style>
+
+<body class="view" style="background-image:url(imagenes/01d.jpg); background-size:cover; background-attachment: fixed;" > 
+
+
+
+
+         <!-- botones de procesos  -->
+        <div class="navbar" style="cuadro-transparente;">
+        
+            <div class="navbar-inner col-md-offset-2">
+                <ul class="nav nav-pills">
+                    <li class="" id="btn-compilar"><a href="#accion1" data-toggle="tab" data-paso="1" style="color:#F0FFFF"><span class="glyphicon glyphicon-cog" aria-hidden="true" style="color:#F0FFFF"></span> Compilar</a></li>
+                    <li class="" id="btn-ejecutar"><a href="#accion3" data-toggle="tab" data-paso="3" style="color:#F0FFFF"><span class="glyphicon glyphicon-play-circle" aria-hidden="true" style="color:#F0FFFF"></span> Ejecutar </a></li>
+                    <li class="" id="btn-depurar"><a href="#accion2" data-toggle="tab" data-paso="2" style="color:#F0FFFF"><span class="glyphicon glyphicon-refresh" aria-hidden="true" style="color:#F0FFFF"></span>Depurar</a></li>
+                    
+                   <li class="" id="btn-limpiar"><a href="#accion4" data-toggle="tab" data-paso="4" style="color:#F0FFFF"><span class="glyphicon glyphicon-erase" aria-hidden="true" style="color:#F0FFFF"></span>Limpiar</a></li>
+
+                  <li class="" id="btn-regresar"><a href="#accion4" data-toggle="tab" data-paso="4" style="color:#F0FFFF"><span class="glyphicon glyphicon-repeat" aria-hidden="true" style="color:#F0FFFF"></span>Regresar</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+          <!-- Contenido de todos los tabs -->
+          <div class="tab-content" >
+
+              <div class="tab-pane fade in active" id="accion1">
+
+                  <!-- area correspondiente a la interfaz-->
+
+                  <div class="cuadro-transparente" style="text-align: center;color: white;margin-top: -15px">
+                      <div class="row">
+                      <div class="col-md-4">
+                         Direccion de Memoria
+                      </div>
+                      <div class="col-md-4">
+                         Contenido 
+                      </div>
+                      <div class="col-md-4">
+                         Instruccion leida
+                      </div>
+                      
+                    </div>
+
+                  </div>
+
+                  <div class="cuadro-transparente" >
+                    <div class="row" style="text-align: center;margin-left: 60px;">
+                    <!--Div-->
+                    <div class="col-sm-3" >
+                      <input type="text" name="txt-contenedor-1" id="txt-cont-0">
+                      <input type="text" name="txt-contenedor-2" id="txt-cont-1">
+                      <input type="text" name="txt-contenedor-3" id="txt-cont-2">
+                      <input type="text" name="txt-contenedor-4" id="txt-cont-3">
+                      <input type="text" name="txt-contenedor-5" id="txt-cont-4">
+                      <input type="text" name="txt-contenedor-6" id="txt-cont-5">
+                      <input type="text" name="txt-contenedor-7" id="txt-cont-6">
+                      <input type="text" name="txt-contenedor-8" id="txt-cont-7">
+                      <input type="text" name="txt-contenedor-9" id="txt-cont-8">
+                      <input type="text" name="txt-contenedor-10" id="txt-cont-9">
+                      <input type="text" name="txt-contenedor-11" id="txt-cont-10">
+                      <input type="text" name="txt-contenedor-12" id="txt-cont-11">
+                      <input type="text" name="txt-contenedor-13" id="txt-cont-12">
+                      <input type="text" name="txt-contenedor-14" id="txt-cont-13">
+                      <input type="text" name="txt-contenedor-15" id="txt-cont-14">
+                      <input type="text" name="txt-contenedor-16" id="txt-cont-15">
+                      <input type="text" name="txt-contenedor-17" id="txt-cont-16">
+                      <input type="text" name="txt-contenedor-18" id="txt-cont-17">
+                      <input type="text" name="txt-contenedor-19" id="txt-cont-18">
+                      <input type="text" name="txt-contenedor-20" id="txt-cont-19">
+
+                      
+                    </div>
+
+                    <div class="col-sm-3" style="text-align: center;margin-left: 125px;">
+                      <input type="text" name="txt-contenido-1" id="txt-contenido-0">
+                      <input type="text" name="txt-contenido-2" id="txt-contenido-1">
+                      <input type="text" name="txt-contenido-3" id="txt-contenido-2">
+                      <input type="text" name="txt-contenido-4" id="txt-contenido-3">
+                      <input type="text" name="txt-contenido-5" id="txt-contenido-4">
+                      <input type="text" name="txt-contenido-6" id="txt-contenido-5">
+                      <input type="text" name="txt-contenido-7" id="txt-contenido-6">
+                      <input type="text" name="txt-contenido-8" id="txt-contenido-7">
+                      <input type="text" name="txt-contenido-9" id="txt-contenido-8">
+                      <input type="text" name="txt-contenido-10" id="txt-contenido-9">
+                      <input type="text" name="txt-contenido-11" id="txt-contenido-10">
+                      <input type="text" name="txt-contenido-12" id="txt-contenido-11">
+                      <input type="text" name="txt-contenido-13" id="txt-contenido-12">
+                      <input type="text" name="txt-contenido-14" id="txt-contenido-13">
+                      <input type="text" name="txt-contenido-15" id="txt-contenido-14">
+                      <input type="text" name="txt-contenido-16" id="txt-contenido-15">
+                      <input type="text" name="txt-contenido-17" id="txt-contenido-16">
+                      <input type="text" name="txt-contenido-18" id="txt-contenido-17">
+                      <input type="text" name="txt-contenido-19" id="txt-contenido-18">
+                      <input type="text" name="txt-contenido-20" id="txt-contenido-19">
+                      
+                    </div>
+
+                    <div class="col-sm-3" style="text-align: center;margin-left: 125px;">
+                      <input type="text" name="txt-instruccion-1" id="txt-instruccion-0">
+                      <input type="text" name="txt-instruccion-2" id="txt-instruccion-1">
+                      <input type="text" name="txt-instruccion-3" id="txt-instruccion-2">
+                      <input type="text" name="txt-instruccion-4" id="txt-instruccion-3">
+                      <input type="text" name="txt-instruccion-5" id="txt-instruccion-4">
+                      <input type="text" name="txt-instruccion-6" id="txt-instruccion-5">
+                      <input type="text" name="txt-instruccion-7" id="txt-instruccion-6">
+                      <input type="text" name="txt-instruccion-8" id="txt-instruccion-7">
+                      <input type="text" name="txt-instruccion-9" id="txt-instruccion-8">
+                      <input type="text" name="txt-instruccion-10" id="txt-instruccion-9">
+                      <input type="text" name="txt-instruccion-11" id="txt-instruccion-10">
+                      <input type="text" name="txt-instruccion-12" id="txt-instruccion-11">
+                      <input type="text" name="txt-instruccion-13" id="txt-instruccion-12">
+                      <input type="text" name="txt-instruccion-14" id="txt-instruccion-13">
+                      <input type="text" name="txt-instruccion-15" id="txt-instruccion-14">
+                      <input type="text" name="txt-instruccion-16" id="txt-instruccion-15">
+                      <input type="text" name="txt-instruccion-17" id="txt-instruccion-16">
+                      <input type="text" name="txt-instruccion-18" id="txt-instruccion-17">
+                      <input type="text" name="txt-instruccion-19" id="txt-instruccion-18">
+                      <input type="text" name="txt-instruccion-20" id="txt-instruccion-19">
+                      
+                    </div>
+                      
+                    </div>
+                  </div>
+                  
+              </div>
+      <!-- ######################################################################################### -->
+
+
+
+              <!-- Tab "accion2" -->
+              <div class="tab-pane fade" id="accion2">
+
+                  <div class="cuadro-transparente" style="border: 25px;text-align: center;color: white;margin-top: -15px" id="div-Resultado">
+
+
+                    <div style="text-align: left;" id="div-depuracion">
+                      <hr>
+
+                        
+                       
+                        
+                        
+
+                    </div>
+                      
+                  </div>
+                  <a class="btn btn-default next" href="#" id="social">Regresar</a>
+              </div>
+              <!--  "accion3" -->
+              <div class="cuadro-transparente" id="accion3">
+                 
+                  <div class="cuadro-transparente" style="border: 25px;color: white;height: 20px"> <h4 style="margin-top: -10px">Ejecucion de Instruciones</h4></div>
+                  <div class="cuadro-transparente" style="border: 25px;color: white">
+                  <div >
+                    <table>
+                    <tr>
+                      <td>
+                        <label>
+                          Contador de Programa (PC):
+                        </label>
+                      </td>
+                      <td>
+                        &nbsp&nbsp&nbsp<input type="text" name="txt-pc-ejecucion" id="txt-pc-ejecucion" style="cuadro-transparente">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label>
+                          Acumulador (AC):
+                        </label>
+                      </td>
+                      <td>
+                        &nbsp&nbsp&nbsp<input type="text" name="txt-acumulador-ejecucion" id="txt-acumulador-ejecucion" style="color: black">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label>
+                          IR:
+                        </label>
+                      </td>
+                      <td>
+                        &nbsp&nbsp&nbsp<input type="text" name="txt-ir" id="txt-ir" style="color: black">
+                      </td>
+                    </tr>
+                  </table>
+                  <hr>
+                  <div class="cuadro-transparente" style="border: 25px;color: white; text-align: center;">
+                    <label>Pantalla LCD Display</label>
+                    <hr style="margin-top: -7px; color: #4B0082;">
+                    <textarea id="txt-pantalla" class="form-control" rows="5" ></textarea>
+                  </div>
+
+                  <div class="cuadro-transparente" style="border: 25px;color: white;text-align: center;">
+                    <label>Resultado:</label>
+                    &nbsp&nbsp&nbsp<input type="text" name="txt-resultado" id="txt-resultado" style="color: black">
+                  </div>
+                  </div>
+              </div>
+              <!-- Tab "accion4" -->
+              <div class="tab-pane fade" id="accion4">
+                      <input type="text" name="txt-ubicacion-001" id="txt-ubicacion-000">
+                      <input type="text" name="txt-ubicacion-002" id="txt-ubicacion-001">
+                      <input type="text" name="txt-ubicacion-003" id="txt-ubicacion-002">
+                      <input type="text" name="txt-ubicacion-004" id="txt-ubicacion-003">
+                      <input type="text" name="txt-ubicacion-005" id="txt-ubicacion-004">
+                      <input type="text" name="txt-ubicacion-006" id="txt-ubicacion-005">
+                      <input type="text" name="txt-ubicacion-007" id="txt-ubicacion-006">
+                      <input type="text" name="txt-ubicacion-008" id="txt-ubicacion-007">
+                      <input type="text" name="txt-ubicacion-009" id="txt-ubicacion-008">
+                      <input type="text" name="txt-ubicacion-010" id="txt-ubicacion-009">
+                      <input type="text" name="txt-ubicacion-011" id="txt-ubicacion-010">
+                      <input type="text" name="txt-ubicacion-012" id="txt-ubicacion-011">
+                      <input type="text" name="txt-ubicacion-013" id="txt-ubicacion-012">
+                      <input type="text" name="txt-ubicacion-014" id="txt-ubicacion-013">
+                      <input type="text" name="txt-ubicacion-015" id="txt-ubicacion-014">
+                      <input type="text" name="txt-ubicacion-016" id="txt-ubicacion-015">
+                      <input type="text" name="txt-ubicacion-017" id="txt-ubicacion-016">
+                      <input type="text" name="txt-ubicacion-018" id="txt-ubicacion-017">
+                      <input type="text" name="txt-ubicacion-019" id="txt-ubicacion-018">
+                      <input type="text" name="txt-ubicacion-020" id="txt-ubicacion-019">
+
+                      <input type="number" name="txt-variable-001" id="txt-variable-001">
+                      <input type="number" name="txt-variable-002" id="txt-variable-002">
+                      <input type="number" name="txt-variable-003" id="txt-variable-003">
+                      <input type="number" name="txt-variable-004" id="txt-variable-004">
+                      <input type="number" name="txt-variable-005" id="txt-variable-005">
+                      <input type="number" name="txt-variable-006" id="txt-variable-006">
+                      <input type="number" name="txt-variable-007" id="txt-variable-007">
+                      <input type="number" name="txt-variable-008" id="txt-variable-008">
+                      <input type="number" name="txt-variable-009" id="txt-variable-009">
+                      <input type="number" name="txt-variable-010" id="txt-variable-010">
+                      <input type="number" name="txt-variable-011" id="txt-variable-011">
+                      <input type="number" name="txt-variable-012" id="txt-variable-012">
+                      <input type="number" name="txt-variable-013" id="txt-variable-013">
+                      <input type="number" name="txt-variable-014" id="txt-variable-014">
+                      <input type="number" name="txt-variable-015" id="txt-variable-015">
+                      <input type="number" name="txt-variable-016" id="txt-variable-016">
+                      <input type="number" name="txt-variable-017" id="txt-variable-017">
+                      <input type="number" name="txt-variable-018" id="txt-variable-018">
+                      <input type="number" name="txt-variable-019" id="txt-variable-019">
+                      <input type="number" name="txt-variable-020" id="txt-variable-020">
+
+                  
+              </div>
+          </div>
+      </div>
+
+       
+    </div>
+  </div>
+
+  
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/funcionalidad.js"></script>
+
+</body>
+</html>
+
