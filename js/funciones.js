@@ -49,37 +49,38 @@ $(document).ready(function(){
 
 //for que genera un conjunto de cajas de texto para las instrucciones ingresadas
 for (var i = 0; i < 20; i++) {
-    document.getElementById('div-depuracion').innerHTML += '<table class= cuadro-transparente style="margin-top:10px;"><tr>'+
+    document.getElementById('div-depuracion').innerHTML += '<table class="cuadro-transparente" style="margin-top:10px;margin:20px;"><tr>'+
                                             '<td>'+
-                                                '<label>Instruccion</label>'+
-                                                '&nbsp&nbsp&nbsp<input class=cuadro-transparente type="text" name="txt-decodificacion-'+i+'" id="txt-decodificacion-'+i+'" style="width: 50px;">'+
+
+                                                '<label>&nbsp&nbsp&nbsp Instruccion</label>'+
+                                                '&nbsp&nbsp&nbsp<input class="cuadro-transparente" type="text" name="txt-decodificacion-'+i+'" id="txt-decodificacion-'+i+'" style="width: 80px; margin:20px;">'+
                                             '</td>'+
                                             '<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>'+
                                             '<td>'+
                                                '<label>Direccion:</label>'+
-                                               '&nbsp&nbsp&nbsp<input type="text" style="color:black" name="txt-direccion-'+i+'" id="txt-direccion-'+i+'" style="width: 50px;border-radius:8px">'+
+                                               '&nbsp&nbsp&nbsp<input type="text" style="color:white;background-color: rgba(0,0,0,0.5);border:1px; border-color:#9370DB;border-style: solid;padding:10px;margin:10px;" name="txt-direccion-'+i+'" id="txt-direccion-'+i+'" style="width: 80px;border:8px">'+
                                             '</td>'+
                                             '</tr></table>'+
                                             '<hr>'+
                                             '<table>'+
                                                 '<tr>'+
-                                                   '<td><label >PC:</label></td>'+
-                                                   '<td>&nbsp&nbsp&nbsp<input type="text" style="color:black" name="txt-pc-'+i+'" id="txt-pc-'+i+'"></td>'+
+                                                   '<td><label >&nbsp&nbsp&nbsp PC:</label></td>'+
+                                                   '<td>&nbsp&nbsp&nbsp<input type="text" style="color:white;background-color: rgba(0,0,0,0.5);border:1px; border-color:#9370DB;border-style: solid;padding:10px;margin:10px;" name="txt-pc-'+i+'" id="txt-pc-'+i+'"></td>'+
                                                 '</tr>'+
                                                 '<tr>'+
-                                                    '<td><label >Acumulador:</label></td>'+
-                                                    '<td>&nbsp&nbsp&nbsp<input type="text" style="color:black" name="txt-acumulador-'+i+'" id="txt-acumulador-'+i+'"><br></td>'+
+                                                    '<td><label >&nbsp&nbsp&nbsp Acumulador:</label></td>'+
+                                                    '<td>&nbsp&nbsp&nbsp<input type="text" style="color:white;background-color: rgba(0,0,0,0.5);border:1px; border-color:#9370DB;border-style: solid;padding:10px;margin:10px;" name="txt-acumulador-'+i+'" id="txt-acumulador-'+i+'"><br></td>'+
                                                 '</tr>'+
                                                 '<tr>'+
-                                                    '<td><label>IR:</label></td>'+
-                                                    '<td>&nbsp&nbsp&nbsp<input type="text" style="color:black" name="txt-ir-'+i+'" id="txt-ir-'+i+'"></td>'+
+                                                    '<td><label>&nbsp&nbsp&nbsp IR:</label></td>'+
+                                                    '<td>&nbsp&nbsp&nbsp<input type="text" style="color:white;background-color: rgba(0,0,0,0.5);border:1px; border-color:#9370DB;border-style: solid;padding:10px;margin:10px;" name="txt-ir-'+i+'" id="txt-ir-'+i+'"></td>'+
                                                 '</tr>'+
                                             '</table><hr>';
 }
 
 
 
-//funcion para el boton limpiar (edte limpia las cajas de tecto y la pantalla)
+//funcion para el boton limpiar (este limpia las cajas de tecto y la pantalla)
 $('#btn-limpiar').click(function(){
     for (var i = 0; i < 20; i--) {
         var contenido = '#txt-contenido-'+i;
