@@ -110,7 +110,7 @@ function ejecutar(){
        switch(subcadena1){
          case '10':
             var subcadena = cadena.substring(2,5);
-            var numero = prompt('Ingrese el numero que ingresara en la posicion '+ subcadena+': ','');
+            var numero = prompt('Ingrese un numero para la direccion correspondiente a la instruccion '+ subcadena+': ','');
             var ubicacion = '#txt-ubicacion-'+subcadena;
             $(ubicacion).val(numero);
             if (i < 10) {
