@@ -19,6 +19,86 @@ function cargarValores(instruccion){
 }
 
 
+//funcion para limpiar las cajas de texto 
+$('#btn-limpiar').click(function(){
+    limpiar();
+});
+
+
+function limpiar(){
+        $('#txt-contenido-0').val("");
+        $('#txt-contenido-1').val("");
+        $('#txt-contenido-2').val("");
+        $('#txt-contenido-3').val("");
+        $('#txt-contenido-4').val("");
+        $('#txt-contenido-5').val("");
+        $('#txt-contenido-6').val("");
+        $('#txt-contenido-7').val("");
+        $('#txt-contenido-8').val("");
+        $('#txt-contenido-9').val("");
+        $('#txt-contenido-10').val("");
+        $('#txt-contenido-11').val("");
+        $('#txt-contenido-12').val("");
+        $('#txt-contenido-13').val("");
+        $('#txt-contenido-14').val("");
+        $('#txt-contenido-15').val("");
+        $('#txt-contenido-16').val("");
+        $('#txt-contenido-17').val("");
+        $('#txt-contenido-18').val("");
+        $('#txt-contenido-19').val("");
+
+        $('#txt-instruccion-0').val("");
+        $('#txt-instruccion-1').val("");
+        $('#txt-instruccion-2').val("");
+        $('#txt-instruccion-3').val("");
+        $('#txt-instruccion-4').val("");
+        $('#txt-instruccion-5').val("");
+        $('#txt-instruccion-6').val("");
+        $('#txt-instruccion-7').val("");
+        $('#txt-instruccion-8').val("");
+        $('#txt-instruccion-9').val("");
+        $('#txt-instruccion-10').val("");
+        $('#txt-instruccion-11').val("");
+        $('#txt-instruccion-12').val("");
+        $('#txt-instruccion-13').val("");
+        $('#txt-instruccion-14').val("");
+        $('#txt-instruccion-15').val("");
+        $('#txt-instruccion-16').val("");
+        $('#txt-instruccion-17').val("");
+        $('#txt-instruccion-18').val("");
+        $('#txt-instruccion-19').val("");
+
+        $('#txt-direccion-0').val("");
+        $('#txt-direccion-1').val("");
+        $('#txt-direccion-2').val("");
+        $('#txt-direccion-3').val("");
+        $('#txt-direccion-4').val("");
+        $('#txt-direccion-5').val("");
+        $('#txt-direccion-6').val("");
+        $('#txt-direccion-7').val("");
+        $('#txt-direccion-8').val("");
+        $('#txt-direccion-9').val("");
+        $('#txt-direccion-10').val("");
+        $('#txt-direccion-11').val("");
+        $('#txt-direccion-12').val("");
+        $('#txt-direccion-13').val("");
+        $('#txt-direccion-14').val("");
+        $('#txt-direccion-15').val("");
+        $('#txt-direccion-16').val("");
+        $('#txt-direccion-17').val("");
+        $('#txt-direccion-18').val("");
+        $('#txt-direccion-19').val("");
+
+        $('#txt-pc-ejecucion').val("");
+        $('#txt-acumulador-ejecucion').val("");
+        $('#txt-ir').val("");
+        $('#txt-pantalla').val("");
+        $('#txt-resultado').val("");
+        
+
+};
+
+
 
 
 $(document).ready(function(){
@@ -281,84 +361,7 @@ function ejecutar(){
 
 
 
-//funcion para limpiar las cajas de texto 
-$('#btn-limpiar').click(function(){
-    limpiar();
-});
 
-
-function limpiar(){
-        $('#txt-contenido-0').val("");
-        $('#txt-contenido-1').val("");
-        $('#txt-contenido-2').val("");
-        $('#txt-contenido-3').val("");
-        $('#txt-contenido-4').val("");
-        $('#txt-contenido-5').val("");
-        $('#txt-contenido-6').val("");
-        $('#txt-contenido-7').val("");
-        $('#txt-contenido-8').val("");
-        $('#txt-contenido-9').val("");
-        $('#txt-contenido-10').val("");
-        $('#txt-contenido-11').val("");
-        $('#txt-contenido-12').val("");
-        $('#txt-contenido-13').val("");
-        $('#txt-contenido-14').val("");
-        $('#txt-contenido-15').val("");
-        $('#txt-contenido-16').val("");
-        $('#txt-contenido-17').val("");
-        $('#txt-contenido-18').val("");
-        $('#txt-contenido-19').val("");
-
-        $('#txt-instruccion-0').val("");
-        $('#txt-instruccion-1').val("");
-        $('#txt-instruccion-2').val("");
-        $('#txt-instruccion-3').val("");
-        $('#txt-instruccion-4').val("");
-        $('#txt-instruccion-5').val("");
-        $('#txt-instruccion-6').val("");
-        $('#txt-instruccion-7').val("");
-        $('#txt-instruccion-8').val("");
-        $('#txt-instruccion-9').val("");
-        $('#txt-instruccion-10').val("");
-        $('#txt-instruccion-11').val("");
-        $('#txt-instruccion-12').val("");
-        $('#txt-instruccion-13').val("");
-        $('#txt-instruccion-14').val("");
-        $('#txt-instruccion-15').val("");
-        $('#txt-instruccion-16').val("");
-        $('#txt-instruccion-17').val("");
-        $('#txt-instruccion-18').val("");
-        $('#txt-instruccion-19').val("");
-
-        $('#txt-direccion-0').val("");
-        $('#txt-direccion-1').val("");
-        $('#txt-direccion-2').val("");
-        $('#txt-direccion-3').val("");
-        $('#txt-direccion-4').val("");
-        $('#txt-direccion-5').val("");
-        $('#txt-direccion-6').val("");
-        $('#txt-direccion-7').val("");
-        $('#txt-direccion-8').val("");
-        $('#txt-direccion-9').val("");
-        $('#txt-direccion-10').val("");
-        $('#txt-direccion-11').val("");
-        $('#txt-direccion-12').val("");
-        $('#txt-direccion-13').val("");
-        $('#txt-direccion-14').val("");
-        $('#txt-direccion-15').val("");
-        $('#txt-direccion-16').val("");
-        $('#txt-direccion-17').val("");
-        $('#txt-direccion-18').val("");
-        $('#txt-direccion-19').val("");
-
-        $('#txt-pc-ejecucion').val("");
-        $('#txt-acumulador-ejecucion').val("");
-        $('#txt-ir').val("");
-        $('#txt-pantalla').val("");
-        $('#txt-resultado').val("");
-        
-
-};
    
 
 //para las instrucciones de bifurcacion
@@ -437,53 +440,8 @@ function ejecutarBifurcacion(saltoInstruccion){
         }
 };
 
-/*
-//seccion de compilacion
-$('#btn-compilar').click(function(){
-        var arrayInstrucciones = ["10:Leer","11:Escribir","20:Cargar","21:Almacenar","30:Sumar","31:Restar","32:Dividir","33:Multiplicar","40:Bifurca","41:Bifurca negativo","42:Bifurca cero","43:Alto"];
-        var regex = /^(10|11|20|21|30|31|32|33|40|41|42|43)[0-9]{3}$/;
-        for (var i = 1; i  < 2; i++) {
-            var input = "#txt-contenido-"+i+"";
-            var input1 = "#txt-instruccion-"+i;
-            var cadena = $(input).val();
-            //alert(cadena);
-            var contenido = regex.test(cadena.trim());
-            alert(contenido);
-            var subcadena = cadena.substring(2,5);
-            alert(subcadena);
-            var subcadena1 = cadena.substring(0,2);
-            alert(subcadena1);
-            var prueba = subcadena == (001||002);
-            alert(prueba);
-            if ((contenido) && (subcadena == ('001'||'002'))) {
-                $(input).css("background-color", "white");
-                for (var i = 0; i < 13; i++) {
-                    var instruccion = '"'+arrayInstrucciones[i]+'"';
-                    var contenidoInstruccion = instruccion.substring(1,3);
-                    var contenidoInstruccion1 = instruccion.substring(4,15);
-                    if (contenidoInstruccion == subcadena1 ) {
-                        //alert(contenidoInstruccion1);
-                        $(input1).val(contenidoInstruccion1);
-                    }
-                }
-            }
-            else
-                $(input).focus();
-                $(":focus").css("background-color", "#D5F5E3");
-        }
 
-        //verificando que las instrucciones son correctas
-        var input2 = "#txt-instruccion-"+i+"";
-        var subcadena2 = cadena.substring(0,2);
-        for (var i = 0; i < 12; i++) {
-          if (arrayInstrucciones[i][0] == subcadena2) {
-              var instruccion = arrayInstrucciones[i][1];
-              $(input2).val(instruccion);
-          }
-        }
 
-});
-*/
 
 
 //seccion de depuracion
@@ -509,6 +467,54 @@ $('#btn-depurar').click(function(){
     }
 
 });
+
+
+
+$('#btn-compilar').click(function(){
+    compilar();
+        
+});
+
+
+
+
+function compilar(){
+    var arrayInstrucciones = ["10:Leer variable numero","11:Escribir en pantalla","20:Cargar en AC         ","21:Almacenar en memoria     ","30:Sumar AC               ","31:Restar AC                ","32:Dividir AC               ","33:Multiplicar AC                ","40:Bifurca               ","41:Bifurca negativo               ","42:Bifurca cero               ","43:Fin ejecucion                 "];
+    var regex = /^(10|11|20|21|30|31|32|33|40|41|42|43|00|01|02|03|04|05|06|07|08|09)[0-9]{3}$/;
+    var comprobacion = 0;
+    for (var i = 0; i < 20; i++) {
+        var input = "#txt-contenido-"+i+"";
+        var input1 = "#txt-instruccion-"+i;
+        var cadena = $(input).val();
+        if (cadena != "") {
+            var contenido = regex.test(cadena.trim());
+            var subcadena = cadena.substring(2,5);
+            var subcadena1 = cadena.substring(0,2);
+            if (contenido ) {
+                
+                for (var j = 0; j < 13; j++) {
+                    var instruccion = '"'+arrayInstrucciones[j]+'"';
+                    var contenidoInstruccion = instruccion.substring(1,3);
+                    var contenidoInstruccion1 = instruccion.substring(4,24);
+                    if (contenidoInstruccion == subcadena1 ) {
+                        $(input1).val(contenidoInstruccion1);
+                    }
+                }
+            }
+            else{
+                var numero = alert('Las instrucciones ingresadas no son correctas!!!!!!');
+                //limpiar();
+            }
+        }
+    }
+    if ( comprobacion == 0){
+        var numero = alert('las instrucciones se han compilado correctamente!!!!!!');
+        return false;
+        
+    }
+    return true;
+}
+
 
 
            
