@@ -52,12 +52,12 @@ for (var i = 0; i < 20; i++) {
     document.getElementById('div-depuracion').innerHTML += '<table class="cuadro-transparente" style="margin-top:10px;margin:20px;"><tr>'+
                                             '<td>'+
 
-                                                '<label>&nbsp&nbsp&nbsp Instruccion</label>'+
+                                                '<label>&nbsp&nbsp&nbsp Instrucción</label>'+
                                                 '&nbsp&nbsp&nbsp<input class="cuadro-transparente" type="text" name="txt-decodificacion-'+i+'" id="txt-decodificacion-'+i+'" style="width: 80px; margin:20px;">'+
                                             '</td>'+
                                             '<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>'+
                                             '<td>'+
-                                               '<label>Direccion:</label>'+
+                                               '<label>Dirección:</label>'+
                                                '&nbsp&nbsp&nbsp<input type="text" style="color:white;background-color: rgba(0,0,0,0.5);border:1px; border-color:#9370DB;border-style: solid;padding:10px;margin:10px;" name="txt-direccion-'+i+'" id="txt-direccion-'+i+'" style="width: 80px;border:8px">'+
                                             '</td>'+
                                             '</tr></table>'+
@@ -80,20 +80,7 @@ for (var i = 0; i < 20; i++) {
 
 
 
-//funcion para el boton limpiar (este limpia las cajas de tecto y la pantalla)
-$('#btn-limpiar').click(function(){
-    for (var i = 0; i < 20; i--) {
-        var contenido = '#txt-contenido-'+i;
-        $(contenido).val(" ");
-      
-    }
-    for (var i = 0; i < 20; i--) {
-        var instruccion = '#txt-instruccion-'+i;
-        $(instruccion).val(" ");
-      
-    }
 
-});
 
 
 //funcion para ejecutar las instruccciones ingresadas
@@ -294,8 +281,87 @@ function ejecutar(){
 
 
 
+//funcion para limpiar las cajas de texto 
+$('#btn-limpiar').click(function(){
+    limpiar();
+});
 
-//para las bifurcaiones
+
+function limpiar(){
+        $('#txt-contenido-0').val("");
+        $('#txt-contenido-1').val("");
+        $('#txt-contenido-2').val("");
+        $('#txt-contenido-3').val("");
+        $('#txt-contenido-4').val("");
+        $('#txt-contenido-5').val("");
+        $('#txt-contenido-6').val("");
+        $('#txt-contenido-7').val("");
+        $('#txt-contenido-8').val("");
+        $('#txt-contenido-9').val("");
+        $('#txt-contenido-10').val("");
+        $('#txt-contenido-11').val("");
+        $('#txt-contenido-12').val("");
+        $('#txt-contenido-13').val("");
+        $('#txt-contenido-14').val("");
+        $('#txt-contenido-15').val("");
+        $('#txt-contenido-16').val("");
+        $('#txt-contenido-17').val("");
+        $('#txt-contenido-18').val("");
+        $('#txt-contenido-19').val("");
+
+        $('#txt-instruccion-0').val("");
+        $('#txt-instruccion-1').val("");
+        $('#txt-instruccion-2').val("");
+        $('#txt-instruccion-3').val("");
+        $('#txt-instruccion-4').val("");
+        $('#txt-instruccion-5').val("");
+        $('#txt-instruccion-6').val("");
+        $('#txt-instruccion-7').val("");
+        $('#txt-instruccion-8').val("");
+        $('#txt-instruccion-9').val("");
+        $('#txt-instruccion-10').val("");
+        $('#txt-instruccion-11').val("");
+        $('#txt-instruccion-12').val("");
+        $('#txt-instruccion-13').val("");
+        $('#txt-instruccion-14').val("");
+        $('#txt-instruccion-15').val("");
+        $('#txt-instruccion-16').val("");
+        $('#txt-instruccion-17').val("");
+        $('#txt-instruccion-18').val("");
+        $('#txt-instruccion-19').val("");
+
+        $('#txt-direccion-0').val("");
+        $('#txt-direccion-1').val("");
+        $('#txt-direccion-2').val("");
+        $('#txt-direccion-3').val("");
+        $('#txt-direccion-4').val("");
+        $('#txt-direccion-5').val("");
+        $('#txt-direccion-6').val("");
+        $('#txt-direccion-7').val("");
+        $('#txt-direccion-8').val("");
+        $('#txt-direccion-9').val("");
+        $('#txt-direccion-10').val("");
+        $('#txt-direccion-11').val("");
+        $('#txt-direccion-12').val("");
+        $('#txt-direccion-13').val("");
+        $('#txt-direccion-14').val("");
+        $('#txt-direccion-15').val("");
+        $('#txt-direccion-16').val("");
+        $('#txt-direccion-17').val("");
+        $('#txt-direccion-18').val("");
+        $('#txt-direccion-19').val("");
+
+        $('#txt-pc-ejecucion').val("");
+        $('#txt-acumulador-ejecucion').val("");
+        $('#txt-ir').val("");
+        $('#txt-pantalla').val("");
+        $('#txt-resultado').val("");
+        
+
+};
+   
+
+//para las instrucciones de bifurcacion
 function ejecutarBifurcacion(saltoInstruccion){
         var salto = saltoInstruccion;
         var input = "#txt-contenido-"+salto;
@@ -371,7 +437,7 @@ function ejecutarBifurcacion(saltoInstruccion){
         }
 };
 
-
+/*
 //seccion de compilacion
 $('#btn-compilar').click(function(){
         var arrayInstrucciones = ["10:Leer","11:Escribir","20:Cargar","21:Almacenar","30:Sumar","31:Restar","32:Dividir","33:Multiplicar","40:Bifurca","41:Bifurca negativo","42:Bifurca cero","43:Alto"];
@@ -417,7 +483,7 @@ $('#btn-compilar').click(function(){
         }
 
 });
-
+*/
 
 
 //seccion de depuracion
@@ -444,96 +510,6 @@ $('#btn-depurar').click(function(){
 
 });
 
-
-//alerts para ingresar los valores
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-        var paso = $(e.target).data('paso');
-        var porcentaje = (parseInt(paso) / 4) * 100;
-        $('.progress-bar').css({width: porcentaje + '%'});
-        $('.progress-bar').text("Paso " + paso + " de 4");
-})
-
-    $('#txt-fecha').click(function(){
-        $("#txt-fecha").datepicker();
-    })
-
-    $('#personal').click(function(){
-        var nombre = $("#txt-nombre").val();
-        var apellido = $("#txt-apellido").val();
-        var fecha = $("#txt-fecha").val();
-        if (nombre=="") {
-            $("#mensaje1").fadeIn("slow");
-                  return false;
-        }
-        else{
-            $("#mensaje1").fadeOut();
-            if (apellido=="") {
-                $("#mensaje2").fadeIn("slow");
-                return false;
-            }
-            else{
-                $("#mensaje2").fadeOut();
-                if (fecha=="") {
-                    $("#mensaje3").fadeIn("slow");
-                    return false;
-                }
-                else{
-                    $("#mensaje3").fadeOut();
-                    $('.nav-pills a[href="#'+'paso2'+'"]').tab('show');
-                            
-                }
-            }
-        }       
-    })
-
-    $('#social').click(function(){
-        $('.nav-pills a[href="#'+'paso3'+'"]').tab('show');
-    })
-
-            $('#seguridad').click(function(){
-                var correo = $("#txt-correo").val();
-                var contraseña = $("#txt-contraseña").val();
-                var contraseña2 = $("#txt-contraseña2").val();
-                if (correo=="") {
-                    $("#mensaje4").fadeIn("slow");
-                    return false;
-                }
-                else{
-                    $("#mensaje4").fadeOut();
-                    var regex = /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
-                    if (regex.test($('#txt-correo').val().trim())) {
-                            $("#mensaje8").fadeOut();
-                    }
-                    else {
-                        
-                        $("#mensaje8").fadeIn("slow");
-                        return false;
-                    }
-                    if (contraseña=="") {
-                        $("#mensaje5").fadeIn("slow");
-                        return false;
-                    }
-                    else{
-                        $("#mensaje5").fadeOut();
-                        if (contraseña2=="") {
-                            $("#mensaje6").fadeIn("slow");
-                            return false;
-                        }
-                        else{
-                            $("#mensaje6").fadeOut();
-                            if (contraseña!=contraseña2) {
-                                $("#mensaje7").fadeIn("slow");
-                            }
-                            else{
-                                $("#mensaje7").fadeOut();
-                                $('.nav-pills a[href="#'+'paso4'+'"]').tab('show');
-                            }
-                        }
-                    }
-                }
-
-                
-            })
 
            
 
