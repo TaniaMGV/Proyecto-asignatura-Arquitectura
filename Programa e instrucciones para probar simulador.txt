@@ -1,0 +1,35 @@
+Programa de prueba: codigo para probar el catraComputer
+
+/////////////////////////////
+10012	LEE A
+10013	LEE B
+20012	CARGA A EN AC
+30013	SUMA B A AC
+21016	ALMACENA EL RESULTADO DE LA SUMA
+11016	ESCRIBE EL RESULTADO
+/////////////////////////////
+
+NOTA: se puede probar con cada una de las demas instrucciones indicadas
+en el documento correspondiente al catraComputer
+
+
+************************************************************************
+Aspectos a tomar en cuenta sobre el funcionamiento de este catraComputer:
+************************************************************************
+El simulador cuenta con: 
+-Un botón Compilar: al pulsar este una vez que se ingresan las instrucciones, el
+	simulador identifica las instrucciones y escribe de cual de ellas 
+	se trata cada linea ingresada en la interfaz proporcionada por el programa; en este
+	paso si alguna de las instrucciones no es correcta a las que se tienen ya 
+	establecidas, el simulador nos indicara que hay un error en el codigo.
+
+-Un botón Ejecutar: en este una vez que se ha verificado que las instrucciones son correctas,
+	se ejecuta el codigo, y se generan los resultados correspondientes.
+
+-Un botón Depurar: al pulsar este, se muestra el estado de la memoria y del acumulador 
+	después de leer y ejecutar cada instrucción
+
+-Un botón Limpiar: este limpia las cajas de texto de la interfaz
+
+-Un botón Regresar: al pulsar este, nos permite rerecargar el simulador, es decir vuelve
+	a la interfaz principal del programa.
